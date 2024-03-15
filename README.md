@@ -1,71 +1,11 @@
-# Vue Theme
+# REST Data Validator documentation
 
-This is the [VitePress](https://vitepress.vuejs.org/) theme for the official Vue documentation at `vuejs.org`.
+Welcome to the official documentation for REST Data Validator, a versatile library designed to provide complete validation for data in RESTful APIs.
 
-Please note this theme is solely dedicated for `vuejs.org` and isn't meant to be used as a content-neutral theme. It does **not** follow semver and may contain hard-coded logic specific to the Vue documentation.
+## Introduction
 
-## Development Setup
+This documentation is intended to provide you with all the information you need to start using REST Data Validator in your projects. It covers everything from basic installation and configuration to advanced examples and customization.
 
-This repo can be developed on its own since it is a self-contained VitePress theme. Make sure to use [pnpm](https://pnpm.io/) as the package manager when installing deps. A docs app is available in `/docs` and can be run with `pnpm dev`:
+Developed with ❤️ by [Sean Luis Guada Rodriguez](https://github.com/SeanLuis).
 
-```bash
-pnpm install
-pnpm dev
-```
-
-## Developing with Real Content
-
-To work on this theme in the context of the `vuejs.org` website requires cloning both repos and linking the theme into the docs repo:
-
-1. Clone repositories:
-
-   ```bash
-   git clone git@github.com:vuejs/docs.git
-   git clone git@github.com:vuejs/theme.git
-   ```
-
-2. Link theme into docs repo:
-
-   ```bash
-   # In ./theme
-   pnpm install
-   # Make @vue/theme available for global linking
-   pnpm link --global
-
-   # in ./docs
-   pnpm install
-   # Link theme
-   pnpm link --global @vue/theme
-   ```
-
-3. Start VitePress server:
-
-   ```bash
-   # in ./docs
-   pnpm dev
-   ```
-
-### Available Scripts
-
-Here is the list of available scripts that can be used during the development.
-
-```bash
-# Boot local dev server.
-$ pnpm dev
-
-# Build docs, then serve locally. This is for testing
-# production build in the local environment.
-$ pnpm serve
-
-# Run lint via Prettier.
-$ pnpm lint
-
-# Run type check via tsc.
-$ pnpm type
-```
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
-
-Copyright (c) 2021-present Evan You
+![Package home preview](https://rest-data-validator.netlify.app/img/preview.png)
