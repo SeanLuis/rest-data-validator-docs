@@ -1,0 +1,220 @@
+[
+  {
+    "objectID": "features",
+    "lvl0": "Introduction",
+    "lvl1": "Features",
+    "content": "Comprehensive Validation, Decorator-based Validation, Flexible and Extensible, Framework Agnostic, Full TypeScript Support, Custom Error Messages.",
+    "url": "#features"
+  },
+  {
+    "objectID": "installation",
+    "lvl0": "Getting Started",
+    "lvl1": "Installation",
+    "content": "npm install rest-data-validator or yarn add rest-data-validator",
+    "url": "#installation"
+  },
+  {
+    "objectID": "basic-example",
+    "lvl0": "Usage",
+    "lvl1": "Basic Example",
+    "content": "Basic usage involves importing the validators and applying them to your data models: @ClassValidator class User { @String({ minLength: 3, maxLength: 30 }) name: string; @Number({ min: 18 }) age: number; }",
+    "url": "#basic-example"
+  },
+  {
+    "objectID": "using-decorators-for-validation",
+    "lvl0": "Usage",
+    "lvl1": "Using Decorators for Validation",
+    "content": "Decorators can be applied to class properties to specify the validation rules directly in the model definition.",
+    "url": "#using-decorators-for-validation"
+  },
+  {
+    "objectID": "custom-validation-rules",
+    "lvl0": "Usage",
+    "lvl1": "Custom Validation Rules",
+    "content": "For more complex validation scenarios, custom validators can be created and used.",
+    "url": "#custom-validation-rules"
+  },
+  {
+    "objectID": "class-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Class Decorator",
+    "content": "The ClassValidator decorator is used at the class level to enable validation of its properties using the decorators provided by the REST Data Validator library. This decorator is essential for activating and applying the defined property validators within a class.",
+    "url": "#class-decorator"
+  },
+  {
+    "objectID": "string-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "String Decorator",
+    "content": "The String decorator is used to apply validations to string properties within classes in TypeScript, ensuring that data meets certain specified criteria before being processed or stored.",
+    "url": "#string-decorator"
+  },
+  {
+    "objectID": "number-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Number Decorator",
+    "content": "The Number decorator is used to apply validations to numerical properties within classes in TypeScript, ensuring that data meets certain specified criteria before being processed or stored.",
+    "url": "#number-decorator"
+  },
+  {
+    "objectID": "email-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Email Decorator",
+    "content": "The `Number` decorator is used to apply validations to numerical properties within classes in TypeScript, ensuring that data meets certain specified criteria before being processed or stored.",
+    "url": "#email-decorator"
+  },
+  {
+    "objectID": "password-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Password Decorator",
+    "content": "The Password decorator is used to enforce validation on string properties that are intended to be used as passwords within classes in TypeScript. This ensures that the passwords adhere to specified security requirements before they are processed or stored.",
+    "url": "#password-decorator"
+  },
+  {
+    "objectID": "date-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Date Decorator",
+    "content": "The Date decorator is used to apply validations to date properties within classes in TypeScript, ensuring that the data meets specified criteria before being processed or stored.",
+    "url": "#date-decorator"
+  },
+  {
+    "objectID": "enum-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Enum Decorator",
+    "content": "The Enum decorator is designed to validate that the value of a property matches one of the values defined in a TypeScript enumeration. It ensures that your data conforms to specified enum constraints, enhancing type safety and data integrity in your applications.",
+    "url": "#enum-decorator"
+  },
+  {
+    "objectID": "file-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "File Decorator",
+    "content": "The File decorator is designed to validate file properties in your classes, ensuring that the files meet specified constraints such as type, size, and name criteria. This is particularly useful for applications that handle file uploads and need to enforce validation rules for security and data integrity.",
+    "url": "#file-decorator"
+  },
+  {
+    "objectID": "range-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Range Decorator",
+    "content": "The Range decorator is designed to validate numerical or date properties within classes, ensuring they fall within a specified range. This decorator is versatile, supporting both numbers and dates, making it ideal for a wide variety of validation scenarios.",
+    "url": "#range-decorator"
+  },
+  {
+    "objectID": "regex-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Regex Decorator",
+    "content": "The Regex decorator allows for the validation of string properties against a specified regular expression pattern. This ensures that the property value conforms to a specific format, making it incredibly useful for validating emails, phone numbers, URLs, and more.",
+    "url": "#regex-decorator"
+  },
+  {
+    "objectID": "custom-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Custom Decorator",
+    "content": "The Custom decorator provides a powerful way to define custom validation logic for properties within your classes. This decorator allows for the utmost flexibility by enabling the use of any validation function that you define, catering to complex or unique validation requirements that are not covered by the standard validators.",
+    "url": "#custom-decorator"
+  },
+  {
+    "objectID": "domain-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Domain Decorator",
+    "content": "The Domain decorator is specifically designed for validating domain-related properties in your classes, such as email addresses, URLs, and domain names, ensuring they adhere to standard formats and constraints.",
+    "url": "#domain-decorator"
+  },
+  {
+    "objectID": "array-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Array Decorator",
+    "content": "The Array decorator allows for the validation of array properties within classes, ensuring they meet specific criteria such as length and uniqueness, and even applying custom validation to each element.",
+    "url": "#array-decorator"
+  },
+  {
+    "objectID": "nested-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Nested Decorator",
+    "content": "The Nested decorator is used to apply nested validation rules to properties of a class. This decorator allows you to specify complex validation logic that can validate deeply nested objects or arrays of objects within your class instances.",
+    "url": "#nested-decorator"
+  },
+  {
+    "objectID": "contextual-decorator",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Contextual Decorator",
+    "content": "The Contextual decorator allows for dynamic validation of class properties based on a contextual understanding of the application state or environment. This document explains how to use the `Contextual` decorator to validate class properties effectively.",
+    "url": "#contextual-decorator"
+  },
+  {
+    "objectID": "sanitizer-functions",
+    "lvl0": "Validators and Decorators",
+    "lvl1": "Sanitizer Functions",
+    "content": "Sanitizer functions are utility functions that allow you to clean or standardize data before it's processed. These are particularly useful when handling user input or preparing data for storage or further computation.",
+    "url": "#sanitizer-functions"
+  },
+  {
+    "objectID": "async-validators",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Async Validators",
+    "content": "Async validators are functions that provide a way to perform validation asynchronously. This is useful when validation logic requires IO operations like database lookups, API calls, or any other asynchronous computation.",
+    "url": "#async-validators"
+  },
+  {
+    "objectID": "nested-validators",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Nested Validators",
+    "content": "The nested validator is a powerful tool for validating nested and complex data structures. It uses a combination of individual validators to validate different parts of the data structure.",
+    "url": "#nested-validators"
+  },
+  {
+    "objectID": "contextual-validators",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Contextual Validators",
+    "content": "The Contextual Validator is a flexible and powerful tool in the TypeScript validation library that enables dynamic validation based on the context of the data. This validator is particularly useful for scenarios where the validation logic depends on certain conditions or the environment in which the data exists.",
+    "url": "#contextual-validators"
+  },
+  {
+    "objectID": "dependency-validators",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Dependency Validators",
+    "content": "This documentation aims to provide a clear and professional guide on using the DependencyValidator decorator and the ValidateDependency function within the validation framework. Both tools are designed to offer powerful and flexible validation mechanisms, each serving specific roles in ensuring data integrity and business logic conformity.",
+    "url": "#dependency-validators"
+  },
+  {
+    "objectID": "dependency-decorator",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Dependency Decorator",
+    "content": "DependencyValidator is a decorator used to specify validation rules for class properties based on the dependencies between them. It allows for dynamic validation where the validity of one property may depend on the value of another.",
+    "url": "#dependency-decorator"
+  },
+  {
+    "objectID": "dependency-function",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Dependency Function",
+    "content": "ValidateDependency is a function that directly validates an object's property against specified dependencies and rules. It's particularly useful in scenarios where validations need to be triggered programmatically.",
+    "url": "#dependency-function"
+  },
+  {
+    "objectID": "separating-validation-logic",
+    "lvl0": "Validation Utilities",
+    "lvl1": "Separating Validation Logic in a Clean Architecture Approach",
+    "content": "This guide focuses on organizing validation logic separately from your model definitions to achieve a cleaner architecture and more maintainable codebase. It explains how to structure your project files and set up validations using a dedicated configuration.",
+    "url": "#separating-validation-logic"
+  },
+  {
+    "objectID": "getter-decorator",
+    "lvl0": "Decorators Utility",
+    "lvl1": "Getter Decorator",
+    "content": "The Getter decorator simplifies the creation of a getter for a specific property, making it read-only by default but visible during property enumeration if specified.",
+    "url": "#getter-decorator"
+  },
+  {
+    "objectID": "setter-decorator",
+    "lvl0": "Decorators Utility",
+    "lvl1": "Setter Decorator",
+    "content": "The Setter decorator allows for the automatic creation of a setter for a specific property, giving you the ability to control the writability of a property dynamically.",
+    "url": "#setter-decorator"
+  },
+  {
+    "objectID": "accessors-decorator",
+    "lvl0": "Decorators Utility",
+    "lvl1": "Accessors Decorator",
+    "content": "The Accessors decorator is a convenient way to automatically create getters and setters for class properties. This simplifies the encapsulation of properties and promotes best practices with minimal boilerplate code.",
+    "url": "#accessors-decorator"
+  }
+]
+

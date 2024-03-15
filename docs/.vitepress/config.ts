@@ -1,0 +1,155 @@
+import { defineConfigWithTheme } from 'vitepress'
+import path from 'path'
+import baseConfig from '../../src/vitepress/config/baseConfig'
+import type { Config as ThemeConfig } from '../../src/vitepress/config'
+
+export default defineConfigWithTheme<ThemeConfig>({
+  extends: baseConfig,
+
+  vite: {
+    build: {
+      minify: false
+    },
+    resolve: {
+      alias: {
+        '@vue/theme': path.join(__dirname, '../../src')
+      }
+    }
+  },
+
+  lang: 'en-US',
+  title: 'REST Data Validator',
+  description: 'REST Data Validator is a versatile library designed to offer comprehensive validation for data in RESTful APIs',
+
+  themeConfig: {
+    algolia: {
+      indexName: 'rest_data_validator_docs',
+      appId: '1FQGDSKECD',
+      apiKey: '8603f70cd71a8af4afa0900b0f5346a4',
+      placeholder: 'Search on Rest Data Validator',
+      translations: {
+        modal: {
+          searchBox: {
+            cancelButtonText: 'Abort',
+            resetButtonTitle: 'Clear search term'
+          },
+          footer: {
+            searchByText: 'Search gracefully done by '
+          }
+        }
+      }
+    },
+
+    carbonAds: {
+      code: 'CEBDT27Y',
+      placement: 'vuejsorg'
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/SeanLuis/rest-data-validator' },
+    ],
+
+    nav: [
+      {
+        text: 'Docs',
+        activeMatch: `^/(guide|examples)/`,
+        items: [
+          {
+            items: [
+              { text: 'Features', link: '/guide/features' },
+              { text: 'Installation', link: '/guide/installation' },
+              { text: 'Usage', link: '/guide/usage' }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'Community',
+        activeMatch: `^/community/`,
+        items: [
+          {
+            items: [
+              {
+                text: 'Contribution Guide',
+                link: '/community/contribution-guide'
+              },
+              {
+                text: 'Code of Conduct',
+                link: '/community/code-of-conduct'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        text: 'Resources',
+        activeMatch: `^/resources/`,
+        items: [
+          {
+            items: [
+              {
+                text: 'License',
+                link: '/resources/license'
+              },
+              {
+                text: 'Roadmap',
+                link: '/resources/roadmap'
+              }
+            ]
+          }
+        ]
+      }
+    ],
+
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Guide',
+          items: [
+            { text: 'Features', link: '/guide/features' },
+            { text: 'Installation', link: '/guide/installation' },
+            { text: 'Usage', link: '/guide/usage' },
+          ]
+        },
+        {
+          text: 'Validators and Decorators',
+          items: [
+            { text: 'Class Decorator', link: '/guide/class-decorator' },
+            { text: 'String Decorator', link: '/guide/string-decorator' },
+            { text: 'Number Decorator', link: '/guide/number-decorator' },
+            { text: 'Email Decorator', link: '/guide/email-decorator' },
+            { text: 'Password Decorator', link: '/guide/password-decorator' },
+            { text: 'Date Decorator', link: '/guide/date-decorator' },
+            { text: 'Enum Decorator', link: '/guide/enum-decorator' },
+            { text: 'File Decorator', link: '/guide/file-decorator' },
+            { text: 'Range Decorator', link: '/guide/range-decorator' },
+            { text: 'Regex Decorator', link: '/guide/regex-decorator' },
+            { text: 'Custom Decorator', link: '/guide/custom-decorator' },
+            { text: 'Domain Decorator', link: '/guide/domain-decorator' },
+            { text: 'Array Decorator', link: '/guide/array-decorator' },
+            { text: 'Nested Decorator', link: '/guide/nested-decorator' },
+            { text: 'Contextual Decorator', link: '/guide/contextual-decorator' },
+            { text: 'Sanitizer Functions', link: '/guide/sanitizer-functions' },
+          ]
+        },
+        {
+          text: 'Validation Utilities',
+          items: [
+            { text: 'Async Validators', link: '/guide/async-validators' },
+            { text: 'Nested Validators', link: '/guide/nested-validators' },
+            { text: 'Contextual Validators', link: '/guide/contextual-validators' },
+            { text: 'Dependency Validators', link: '/guide/dependency-validators' },
+          ]
+        },
+        {
+          text: 'Decorators Utility',
+          items: [
+            { text: 'Accessors Decorator', link: '/guide/accessors-decorator' },
+            { text: 'Getter Decorator', link: '/guide/getter-decorator' },
+            { text: 'Setter Decorator', link: '/guide/setter-decorator' },
+          ]
+        }
+      ],
+    },
+  }
+})
