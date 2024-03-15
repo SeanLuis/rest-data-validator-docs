@@ -94,6 +94,10 @@ export default defineConfigWithTheme<ThemeConfig>({
               {
                 text: 'Roadmap',
                 link: '/resources/roadmap'
+              },
+              {
+                text: 'Changelog',
+                link: '/resources/changelog'
               }
             ]
           }
