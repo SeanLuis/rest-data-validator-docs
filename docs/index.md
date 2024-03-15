@@ -2,9 +2,9 @@
 page: true
 ---
 
-<div class="h-screen flex flex-column justify-center items-center">
+<div class="fill-height flex flex-column justify-center items-center">
   <div class="hero">
-    <h1>REST Data Validator</h1>
+    <h1 style="line-height: 3rem">REST Data Validator</h1>
     <p class="description">REST Data Validator is a versatile library designed to offer comprehensive validation for
       data in RESTful APIs.</p>
     <a href="/guide/installation" class="get-started-button">Get Started</a>
@@ -36,6 +36,16 @@ page: true
     --vt-font-family-mono: Menlo, Monaco, Consolas, 'Courier New', monospace;
     --card-background-start: rgba(255, 255, 255, 0.7);
     --card-background-end: rgba(255, 255, 255, 0.4);
+  }
+
+  .fill-height {
+    height: calc(100vh - calc(var(--vt-nav-height) * 2));
+  }
+
+  @media (max-width: 600px) {
+    .fill-height {
+      height: auto;
+    }
   }
 
   .hero {
