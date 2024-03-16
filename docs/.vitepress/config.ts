@@ -176,7 +176,7 @@ export default defineConfigWithTheme<ThemeConfig>({
         text: 'MIT License',
         link: 'https://github.com/SeanLuis/rest-data-validator/blob/master/LICENSE'
       },
-      copyright: 'Copyright © 2024-present Sean Rodriguez'
+      copyright: 'Copyright © 2024 Sean Rodriguez'
     }
   }
 })
