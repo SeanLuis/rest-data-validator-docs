@@ -1,5 +1,40 @@
 # Changelog
 
+## v2.0.8 - Introducing CLI Tool Integration - 16/3/2024
+### Introduction
+We are thrilled to announce the release of REST Data Validator version 2.0.8. This update introduces an exciting new feature: the integration of a CLI tool for generating models and applying validations. Additionally, we've enhanced model validation capabilities to further support your development workflows.
+
+### CLI Tool Integration
+
+- **Command Line Interface**: The new `rest-cli` tool allows for generating models and applying validations directly from your command line, streamlining the creation and maintenance of validation schemas.
+
+### Model Validation Enhancement
+
+- **Enhanced Validation Strategies**: This release includes updates to our validation strategies, offering more flexibility and control over data validation in your projects.
+
+### Why This Update?
+
+The addition of the CLI tool and the enhancements to model validation were driven by feedback from our community. These improvements aim to simplify the developer experience, making it easier to generate, maintain, and apply validation rules within your applications.
+
+### Getting Started with v2.0.8
+
+To explore the new features and enhancements introduced in version 2.0.8, please update your REST Data Validator package:
+
+```bash
+npm update rest-data-validator
+```
+
+After updating, you can start using the CLI tool immediately by following the instructions in our updated documentation.
+
+### Acknowledgments
+
+We extend our deepest gratitude to the REST Data Validator community for your valuable feedback and continuous support. These enhancements are part of our ongoing commitment to evolving the library to meet your needs.
+
+---
+
+For a comprehensive guide on all features and updates introduced in version 2.0.8, visit our [documentation site](https://rest-data-validator.netlify.app).
+
+
 ## v2.0.7 - Documentation Migration to New Site - 15/3/2024
 ### Introduction
 In our continuous effort to improve REST Data Validator and the user experience, we are excited to announce version 2.0.7. The highlight of this release is the migration of our documentation to a new, more user-friendly site.

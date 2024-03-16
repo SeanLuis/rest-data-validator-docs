@@ -59,7 +59,7 @@
     "objectID": "email-decorator",
     "lvl0": "Validators and Decorators",
     "lvl1": "Email Decorator",
-    "content": "The `Number` decorator is used to apply validations to numerical properties within classes in TypeScript, ensuring that data meets certain specified criteria before being processed or stored.",
+    "content": "The Number decorator is used to apply validations to numerical properties within classes in TypeScript, ensuring that data meets certain specified criteria before being processed or stored.",
     "url": "#email-decorator"
   },
   {
@@ -136,7 +136,7 @@
     "objectID": "contextual-decorator",
     "lvl0": "Validators and Decorators",
     "lvl1": "Contextual Decorator",
-    "content": "The Contextual decorator allows for dynamic validation of class properties based on a contextual understanding of the application state or environment. This document explains how to use the `Contextual` decorator to validate class properties effectively.",
+    "content": "The Contextual decorator allows for dynamic validation of class properties based on a contextual understanding of the application state or environment. This document explains how to use the Contextual decorator to validate class properties effectively.",
     "url": "#contextual-decorator"
   },
   {
@@ -215,6 +215,41 @@
     "lvl1": "Accessors Decorator",
     "content": "The Accessors decorator is a convenient way to automatically create getters and setters for class properties. This simplifies the encapsulation of properties and promotes best practices with minimal boilerplate code.",
     "url": "#accessors-decorator"
+  },
+  {
+    "objectID": "accessors-decorator",
+    "lvl0": "Decorators Utility",
+    "lvl1": "Accessors Decorator",
+    "content": "The Accessors decorator is a convenient way to automatically create getters and setters for class properties. This simplifies the encapsulation of properties and promotes best practices with minimal boilerplate code.",
+    "url": "#accessors-decorator"
+  },
+  {
+    "objectID": "cli-installation",
+    "lvl0": "Rest CLI",
+    "lvl1": "Installation",
+    "content": "The REST Data Validator CLI Tool provides a powerful interface for generating models and applying validations directly from the command line, streamlining the development process for RESTful APIs by automating the creation of TypeScript models with integrated validation rules.",
+    "url": "/guide/cli#installation"
+  },
+  {
+    "objectID": "cli-commands",
+    "lvl0": "Rest CLI",
+    "lvl1": "Commands",
+    "content": "The REST Data Validator CLI Tool provides a powerful interface for generating models and applying validations directly from the command line, streamlining the development process for RESTful APIs by automating the creation of TypeScript models with integrated validation rules.",
+    "url": "/guide/cli#cli-commands"
+  },
+  {
+    "objectID": "cli-model-generation",
+    "lvl0": "Rest CLI",
+    "lvl1": "Model Generation",
+    "content": "The generate:model command prompts you to input properties for your model, including property names and data types. Supported data types include string, number, boolean, object, any, void, null, and undefined.",
+    "url": "/guide/cli#model-generation"
+  },
+  {
+    "objectID": "cli-validation-generation",
+    "lvl0": "Rest CLI",
+    "lvl1": "Validation Generation",
+    "content": "The generate:validations command supports a wide range of validation types, such as Required, Custom, Array, Date, and many more. Each validation type is applied according to strategies that define how the validation is implemented.",
+    "url": "/guide/cli#validation-generation"
   }
 ]
 
