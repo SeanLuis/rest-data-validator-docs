@@ -4,3 +4,5 @@ dist
 TODOs.md
 .DS_Store
 docs/.vitepress/cache
+/src/core/utils/algolia.json
+.idea

@@ -228,28 +228,28 @@
     "lvl0": "Rest CLI",
     "lvl1": "Installation",
     "content": "The REST Data Validator CLI Tool provides a powerful interface for generating models and applying validations directly from the command line, streamlining the development process for RESTful APIs by automating the creation of TypeScript models with integrated validation rules.",
-    "url": "/guide/cli#installation"
+    "url": "#cli#installation"
   },
   {
     "objectID": "cli-commands",
     "lvl0": "Rest CLI",
     "lvl1": "Commands",
     "content": "The REST Data Validator CLI Tool provides a powerful interface for generating models and applying validations directly from the command line, streamlining the development process for RESTful APIs by automating the creation of TypeScript models with integrated validation rules.",
-    "url": "/guide/cli#cli-commands"
+    "url": "#cli#cli-commands"
   },
   {
     "objectID": "cli-model-generation",
     "lvl0": "Rest CLI",
     "lvl1": "Model Generation",
     "content": "The generate:model command prompts you to input properties for your model, including property names and data types. Supported data types include string, number, boolean, object, any, void, null, and undefined.",
-    "url": "/guide/cli#model-generation"
+    "url": "#cli#model-generation"
   },
   {
     "objectID": "cli-validation-generation",
     "lvl0": "Rest CLI",
     "lvl1": "Validation Generation",
     "content": "The generate:validations command supports a wide range of validation types, such as Required, Custom, Array, Date, and many more. Each validation type is applied according to strategies that define how the validation is implemented.",
-    "url": "/guide/cli#validation-generation"
+    "url": "#cli#validation-generation"
   }
 ]
 
