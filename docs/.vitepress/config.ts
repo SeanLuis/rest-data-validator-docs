@@ -132,8 +132,7 @@ export default defineConfigWithTheme<ThemeConfig>({
             { text: 'Domain Decorator', link: '/guide/domain-decorator' },
             { text: 'Array Decorator', link: '/guide/array-decorator' },
             { text: 'Nested Decorator', link: '/guide/nested-decorator' },
-            { text: 'Contextual Decorator', link: '/guide/contextual-decorator' },
-            { text: 'Sanitizer Functions', link: '/guide/sanitizer-functions' },
+            { text: 'Contextual Decorator', link: '/guide/contextual-decorator' }
           ]
         },
         {
@@ -146,14 +145,38 @@ export default defineConfigWithTheme<ThemeConfig>({
           ]
         },
         {
-          text: 'Decorators Utility',
+          text: 'Sanitizer Utilities',
+          items: [
+            { text: 'Functions', link: '/guide/sanitizer-functions' }
+          ]
+        },
+        {
+          text: 'Decorators Utilities',
           items: [
             { text: 'Accessors Decorator', link: '/guide/accessors-decorator' },
             { text: 'Getter Decorator', link: '/guide/getter-decorator' },
             { text: 'Setter Decorator', link: '/guide/setter-decorator' },
           ]
+        },
+        {
+          text: 'Rest CLI',
+          items: [
+            { text: 'Installation', link: '/guide/cli#installation' },
+            { text: 'Commands', link: '/guide/cli#cli-commands' },
+            { text: 'Model Generation', link: '/guide/cli#model-generation' },
+            { text: 'Validation Generation', link: '/guide/cli#validation-generation' },
+          ]
         }
       ],
     },
+
+
+    footer: {
+      license: {
+        text: 'MIT License',
+        link: 'https://github.com/SeanLuis/rest-data-validator/blob/master/LICENSE'
+      },
+      copyright: 'Copyright © 2024-present Sean Rodriguez'
+    }
   }
 })
