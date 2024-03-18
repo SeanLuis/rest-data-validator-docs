@@ -49,6 +49,11 @@ export interface Config {
   }
 
   /**
+   * The head configuration options.
+   */
+  head?: HeadConfig[]
+
+  /**
    * Global footer settings. The footer will only be displayed when a page has
    * the frontmatter option `page: true`.  You may pass `footer: false` to the
    * frontmatter to hide the footer.
@@ -143,6 +148,10 @@ export interface ScreenStateTranslations {
     reportMissingResultsLinkText?: string
   }
 }
+
+export type HeadConfig =
+  | [string, Record<string, string | boolean>]
+  | [string, Record<string, string | boolean>, string]
 
 export type NavItem = NavItemWithLink | NavItemWithChildren
 

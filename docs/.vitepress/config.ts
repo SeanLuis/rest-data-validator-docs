@@ -1,4 +1,4 @@
-import { defineConfigWithTheme } from 'vitepress'
+import { HeadConfig, defineConfigWithTheme } from 'vitepress'
 import path from 'path'
 import baseConfig from '../../src/vitepress/config/baseConfig'
 import type { Config as ThemeConfig } from '../../src/vitepress/config'
@@ -19,7 +19,8 @@ export default defineConfigWithTheme<ThemeConfig>({
 
   lang: 'en-US',
   title: 'REST Data Validator',
-  description: 'REST Data Validator is a versatile library designed to offer comprehensive validation for data in RESTful APIs',
+  description:
+    'REST Data Validator is a versatile library designed to offer comprehensive validation for data in RESTful APIs',
 
   themeConfig: {
     algolia: {
@@ -40,13 +41,35 @@ export default defineConfigWithTheme<ThemeConfig>({
       }
     },
 
+    head: [
+      ['link', { rel: 'icon', href: '/favicon.ico' }],
+      [
+        'script',
+        {
+          async: true,
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-95VHHSTEN0'
+        }
+      ],
+      [
+        'script',
+        {},
+        `window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-95VHHSTEN0');`
+      ]
+    ] as HeadConfig[],
+
     carbonAds: {
       code: 'CEBDT27Y',
       placement: 'vuejsorg'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/SeanLuis/rest-data-validator' },
+      {
+        icon: 'github',
+        link: 'https://github.com/SeanLuis/rest-data-validator'
+      }
     ],
 
     nav: [
@@ -112,7 +135,7 @@ export default defineConfigWithTheme<ThemeConfig>({
           items: [
             { text: 'Features', link: '/guide/features' },
             { text: 'Installation', link: '/guide/installation' },
-            { text: 'Usage', link: '/guide/usage' },
+            { text: 'Usage', link: '/guide/usage' }
           ]
         },
         {
@@ -132,7 +155,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             { text: 'Domain Decorator', link: '/guide/domain-decorator' },
             { text: 'Array Decorator', link: '/guide/array-decorator' },
             { text: 'Nested Decorator', link: '/guide/nested-decorator' },
-            { text: 'Contextual Decorator', link: '/guide/contextual-decorator' }
+            {
+              text: 'Contextual Decorator',
+              link: '/guide/contextual-decorator'
+            }
           ]
         },
         {
@@ -140,22 +166,26 @@ export default defineConfigWithTheme<ThemeConfig>({
           items: [
             { text: 'Async Validators', link: '/guide/async-validators' },
             { text: 'Nested Validators', link: '/guide/nested-validators' },
-            { text: 'Contextual Validators', link: '/guide/contextual-validators' },
-            { text: 'Dependency Validators', link: '/guide/dependency-validators' },
+            {
+              text: 'Contextual Validators',
+              link: '/guide/contextual-validators'
+            },
+            {
+              text: 'Dependency Validators',
+              link: '/guide/dependency-validators'
+            }
           ]
         },
         {
           text: 'Sanitizer Utilities',
-          items: [
-            { text: 'Functions', link: '/guide/sanitizer-functions' }
-          ]
+          items: [{ text: 'Functions', link: '/guide/sanitizer-functions' }]
         },
         {
           text: 'Decorators Utilities',
           items: [
             { text: 'Accessors Decorator', link: '/guide/accessors-decorator' },
             { text: 'Getter Decorator', link: '/guide/getter-decorator' },
-            { text: 'Setter Decorator', link: '/guide/setter-decorator' },
+            { text: 'Setter Decorator', link: '/guide/setter-decorator' }
           ]
         },
         {
@@ -164,12 +194,14 @@ export default defineConfigWithTheme<ThemeConfig>({
             { text: 'Installation', link: '/guide/cli#installation' },
             { text: 'Commands', link: '/guide/cli#cli-commands' },
             { text: 'Model Generation', link: '/guide/cli#model-generation' },
-            { text: 'Validation Generation', link: '/guide/cli#validation-generation' },
+            {
+              text: 'Validation Generation',
+              link: '/guide/cli#validation-generation'
+            }
           ]
         }
-      ],
+      ]
     },
-
 
     footer: {
       license: {
