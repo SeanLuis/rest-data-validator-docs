@@ -6,13 +6,13 @@ layout: default
 
 ## Overview
 
-This documentation aims to provide a clear and professional guide on using the `DependencyValidator` decorator and the `ValidateDependency` function within the validation framework. Both tools are designed to offer powerful and flexible validation mechanisms, each serving specific roles in ensuring data integrity and business logic conformity.
+This documentation aims to provide a clear and professional guide on using the `Dependency` decorator and the `ValidateDependency` function within the validation framework. Both tools are designed to offer powerful and flexible validation mechanisms, each serving specific roles in ensuring data integrity and business logic conformity.
 
 ## Dependency Decorator
 
 ### Introduction
 
-`DependencyValidator` is a decorator used to specify validation rules for class properties based on the dependencies between them. It allows for dynamic validation where the validity of one property may depend on the value of another.
+`Dependency` is a decorator used to specify validation rules for class properties based on the dependencies between them. It allows for dynamic validation where the validity of one property may depend on the value of another.
 
 ### Usage
 
@@ -23,7 +23,7 @@ To use `Dependency`, annotate the target property with `@Dependency`, providing 
 Suppose we have a `Product` class where the `saleDate` must not precede the `manufactureDate`:
 
 ```typescript
-import { Dependency, ClassValidator } from '../../src'
+import { Dependency, ClassValidator } from 'rest-data-validator'
 
 @ClassValidator
 class Product {
@@ -131,7 +131,7 @@ Create dedicated files for validation configurations to decouple validation logi
 **AgricultureProductValidations.ts**:
 
 ```typescript
-import { Dependency } from '../decorators/DependencyValidator'
+import { Dependency } from 'rest-data-validator'
 import { AgricultureProduct } from '../models/AgricultureProduct'
 
 export const configureAgricultureProductValidations = () => {
@@ -167,4 +167,4 @@ This approach enhances code maintainability, facilitates easier testing, and adh
 
 ## Conclusion
 
-`DependencyValidator` and `ValidateDependency` provide a robust framework for implementing complex validation logic that respects the interdependencies between data fields. By following the outlined guidelines and examples, developers can ensure their applications maintain data integrity and adhere to business rules effectively.
+`Dependency` and `validateDependency` provide a robust framework for implementing complex validation logic that respects the interdependencies between data fields. By following the outlined guidelines and examples, developers can ensure their applications maintain data integrity and adhere to business rules effectively.
