@@ -42,6 +42,7 @@ export default defineConfigWithTheme<ThemeConfig>({
     },
 
     head: [
+      ['script', { src: '/consent.js' }],
       ['link', { rel: 'icon', href: '/favicon.ico' }],
       [
         'script',
