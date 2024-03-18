@@ -159,6 +159,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Contextual Decorator',
               link: '/guide/contextual-decorator'
+            },
+            {
+              text: 'Dependency Decorator',
+              link: '/guide/dependency-validators#dependency-decorator'
             }
           ]
         },

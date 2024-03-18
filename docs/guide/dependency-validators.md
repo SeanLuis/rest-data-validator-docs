@@ -16,26 +16,28 @@ This documentation aims to provide a clear and professional guide on using the `
 
 ### Usage
 
-To use `DependencyValidator`, annotate the target property with `@DependencyValidator`, providing a validation configuration object. This object must define the `name`, `getDependencies`, `validate`, and `message` properties.
+To use `Dependency`, annotate the target property with `@Dependency`, providing a validation configuration object. This object must define the `name`, `getDependencies`, `validate`, and `message` properties.
 
 ### Example
 
 Suppose we have a `Product` class where the `saleDate` must not precede the `manufactureDate`:
 
 ```typescript
-import { DependencyValidator, ClassValidator } from "../../src";
+import { Dependency, ClassValidator } from '../../src'
 
 @ClassValidator
 class Product {
-    public manufactureDate: Date;
-    
-    @DependencyValidator({
-        name: "SaleDateAfterManufactureDate",
-        getDependencies: (instance) => ({ manufactureDate: instance.manufactureDate }),
-        validate: (saleDate, { manufactureDate }) => saleDate >= manufactureDate,
-        message: "Sale date must be after the manufacture date.",
-    })
-    public saleDate: Date;
+  public manufactureDate: Date
+
+  @Dependency({
+    name: 'SaleDateAfterManufactureDate',
+    getDependencies: (instance) => ({
+      manufactureDate: instance.manufactureDate
+    }),
+    validate: (saleDate, { manufactureDate }) => saleDate >= manufactureDate,
+    message: 'Sale date must be after the manufacture date.'
+  })
+  public saleDate: Date
 }
 ```
 
@@ -54,20 +56,16 @@ Invoke `ValidateDependency` with the target object, the value to validate, and t
 Validating a `Product` instance's `saleDate` could look something like this:
 
 ```typescript
-const product = new Product(/* initialize properties */);
-const validationResult = ValidateDependency(
-    product,
-    product.saleDate,
-    {
-        name: "SaleDateAfterManufactureDate",
-        getDependencies: () => ({ manufactureDate: product.manufactureDate }),
-        validate: (saleDate, { manufactureDate }) => saleDate >= manufactureDate,
-        message: "Sale date must be after the manufacture date.",
-    }
-);
+const product = new Product(/* initialize properties */)
+const validationResult = ValidateDependency(product, product.saleDate, {
+  name: 'SaleDateAfterManufactureDate',
+  getDependencies: () => ({ manufactureDate: product.manufactureDate }),
+  validate: (saleDate, { manufactureDate }) => saleDate >= manufactureDate,
+  message: 'Sale date must be after the manufacture date.'
+})
 
 if (!validationResult.isValid) {
-    console.error(validationResult.errors);
+  console.error(validationResult.errors)
 }
 ```
 
@@ -97,15 +95,10 @@ src/
 │
 ├── validations/
 │   └── AgricultureProductValidations.ts
-│
-└── decorators/
-    ├── DependencyValidator.ts
-    └── ValidateDependency.ts
 ```
 
 - `models/`: Contains the application's data models.
 - `validations/`: Stores separate files for configuring validations for each model.
-- `decorators/`: Includes the implementations of validation decorators.
 
 ### Setting Up the Model
 
@@ -115,17 +108,17 @@ Define your models in a clear and concise manner, focusing solely on data repres
 
 ```typescript
 export class AgricultureProduct {
-  public harvestDate: Date;
-  public saleDate: Date;
+  public harvestDate: Date
+  public saleDate: Date
   // Additional properties as needed.
 
   constructor(
     harvestDate: Date,
-    saleDate: Date,
+    saleDate: Date
     // Other constructor parameters.
   ) {
-    this.harvestDate = harvestDate;
-    this.saleDate = saleDate;
+    this.harvestDate = harvestDate
+    this.saleDate = saleDate
     // Initialize other properties.
   }
 }
@@ -138,19 +131,19 @@ Create dedicated files for validation configurations to decouple validation logi
 **AgricultureProductValidations.ts**:
 
 ```typescript
-import { Dependency } from "../decorators/DependencyValidator";
-import { AgricultureProduct } from "../models/AgricultureProduct";
+import { Dependency } from '../decorators/DependencyValidator'
+import { AgricultureProduct } from '../models/AgricultureProduct'
 
 export const configureAgricultureProductValidations = () => {
-    Dependency({
-        name: "SaleDateAfterHarvestDate",
-        getDependencies: (instance) => ({ harvestDate: instance.harvestDate }),
-        validate: (saleDate, { harvestDate }) => saleDate >= harvestDate,
-        message: "The sale date cannot be before the harvest date.",
-    })(AgricultureProduct.prototype, "saleDate");
+  Dependency({
+    name: 'SaleDateAfterHarvestDate',
+    getDependencies: (instance) => ({ harvestDate: instance.harvestDate }),
+    validate: (saleDate, { harvestDate }) => saleDate >= harvestDate,
+    message: 'The sale date cannot be before the harvest date.'
+  })(AgricultureProduct.prototype, 'saleDate')
 
-    // Repeat for other properties needing validation.
-};
+  // Repeat for other properties needing validation.
+}
 ```
 
 ### Applying Configuration
@@ -160,10 +153,10 @@ Ensure the validation configurations are applied by invoking the setup function 
 **main.ts**:
 
 ```typescript
-import "reflect-metadata";
-import { configureAgricultureProductValidations } from "./validations/AgricultureProductValidations";
+import 'reflect-metadata'
+import { configureAgricultureProductValidations } from './validations/AgricultureProductValidations'
 
-configureAgricultureProductValidations();
+configureAgricultureProductValidations()
 ```
 
 ### Example Usage
