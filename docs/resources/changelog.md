@@ -1,6 +1,60 @@
 # Changelog
 
-## v2.0.8 - Introducing CLI Tool Integration - 16/3/2024
+## v2.0.10 - CLI Generators and Strategies Enhancement - 3/16/2024
+### Introduction
+We are pleased to announce version 2.0.10 of the REST Data Validator, focusing on significant updates to the model and validation generators, along with crucial fixes to various validation strategies. This release aims to streamline the development process further and enhance the reliability of our CLI tool.
+
+### What's New
+
+#### ModelGenerator Improvements
+- Simplified path resolution for model generation to improve the user experience. The path now defaults to the current working directory, making the operation more intuitive.
+- The import statements have been refined to directly reference `rest-data-validator`, ensuring a smoother integration and a more straightforward approach to managing dependencies.
+
+#### ValidationsGenerator Enhancements
+- We've introduced smarter logic to ensure that `rest-data-validator` is always correctly imported, eliminating potential issues related to missing validation types.
+- The handling of named imports has been optimized to include only necessary validation types, streamlining the generated code and enhancing readability.
+
+#### Strategic Adjustments
+- The `ArrayStrategy` has been updated to generate validator functions conditionally, based on the presence of `minLength` or `maxLength` parameters. This approach reduces unnecessary code generation and focuses on user-specified constraints.
+- We've also refined the properties argument in the Array decorator to include `minLength` and `maxLength` conditionally, further streamlining the generated decorator code and focusing on relevant constraints.
+
+### Additions & Deletions
+This release includes a total of 42 changes across the ModelGenerator, ValidationsGenerator, and various strategy files, comprising both additions and deletions aimed at refining the tool's functionality.
+
+### Acknowledgments
+We extend our heartfelt gratitude to the REST Data Validator community for your ongoing support and valuable feedback. Your contributions are instrumental in shaping the future of this tool, and we're excited to continue improving it together.
+
+For detailed information on all features and updates, please refer to the documentation on our [GitHub page](https://github.com/SeanLuis/rest-data-validator#readme).
+
+## v2.0.9 - Dependency Adjustment and CLI Enhancement - 3/16/2024
+### Introduction
+We're excited to announce the release of REST Data Validator version 2.0.9. This update focuses on addressing dependency management for improved usability and stability, particularly regarding the CLI tool functionality.
+
+### Highlights of the Release
+
+#### Dependency Management
+
+- Moved `ts-morph` from `devDependencies` to `dependencies` to ensure the CLI tool functions correctly in all environments. This change addresses the issue where `ts-morph` was not found when the CLI tool was executed, enhancing the tool's reliability and user experience.
+
+#### CLI Tool Improvement
+
+- The CLI tool, `rest-cli`, has received under-the-hood improvements for better performance and stability. Now, users can seamlessly generate models and validations without encountering missing dependency errors.
+
+### Getting Started
+
+To get started with REST Data Validator v2.0.9, update your package using your preferred package manager:
+
+```bash
+# Using npm
+npm update rest-data-validator
+
+# Using yarn
+yarn upgrade rest-data-validator
+
+
+
+
+## v2.0.8 - Introducing CLI Tool Integration - 3/16/2024
 ### Introduction
 We are thrilled to announce the release of REST Data Validator version 2.0.8. This update introduces an exciting new feature: the integration of a CLI tool for generating models and applying validations. Additionally, we've enhanced model validation capabilities to further support your development workflows.
 
@@ -35,7 +89,7 @@ We extend our deepest gratitude to the REST Data Validator community for your va
 For a comprehensive guide on all features and updates introduced in version 2.0.8, visit our [documentation site](https://rest-data-validator.netlify.app).
 
 
-## v2.0.7 - Documentation Migration to New Site - 15/3/2024
+## v2.0.7 - Documentation Migration to New Site - 3/15/2024
 ### Introduction
 In our continuous effort to improve REST Data Validator and the user experience, we are excited to announce version 2.0.7. The highlight of this release is the migration of our documentation to a new, more user-friendly site.
 
@@ -64,7 +118,7 @@ We want to thank our community for your ongoing support and feedback. This migra
 For detailed information on all features and updates, please visit our new [documentation site](https://rest-data-validator.netlify.app).
 
 
-## v2.0.6 - Introducing Dependency Validation - 12/3/2024
+## v2.0.6 - Introducing Dependency Validation - 3/12/2024
 ### Introduction
 We are thrilled to announce the initial release of REST Data Validator, a library designed to simplify and enhance the validation process for data integrity in RESTful applications. This release introduces a powerful set of features to support complex validation scenarios.
 
@@ -90,7 +144,7 @@ A special thanks to all contributors and the community for your support and feed
 
 For more details and usage examples, please visit our [documentation](https://github.com/SeanLuis/rest-data-validator?tab=readme-ov-file#dependency-validators).
 
-## v2.0.5 - Utility Decorators Added for Enhanced Property Management - 12/3/2024
+## v2.0.5 - Utility Decorators Added for Enhanced Property Management - 3/12/2024
 We are excited to announce the release of `rest-data-validator` v2.0.5, which introduces a set of new utility decorators to improve property management within your classes.
 
 ### What's New in 2.0.5?
@@ -121,7 +175,7 @@ Stay tuned for further updates as we continue to improve and expand `rest-data-v
 
 Remember to check the updated [documentation](https://github.com/SeanLuis/rest-data-validator/blob/master/README.md) for detailed information on the new release.
 
-## v2.0.4 - Documentation Clarity Enhancements - 12/3/2024
+## v2.0.4 - Documentation Clarity Enhancements - 3/12/2024
 ### Improved Readability and Navigation in Documentation
 
 We are delighted to roll out the 2.0.4 update for `rest-data-validator`, which significantly improves the documentation to enhance user experience.
@@ -137,7 +191,7 @@ These updates are part of our ongoing efforts to ensure that `rest-data-validato
 We appreciate your feedback and contributions which help us improve further. Stay tuned for more updates!
 
 
-## v2.0.3 - Introducing Password Validation Enhancements - 12/3/2024
+## v2.0.3 - Introducing Password Validation Enhancements - 3/12/2024
 We are thrilled to introduce the `Password` decorator in this version. It provides a way to enforce password validations within TypeScript classes, ensuring that passwords meet established security standards.
 
 ### Additions
@@ -158,7 +212,7 @@ We are thrilled to introduce the `Password` decorator in this version. It provid
 The `Password` decorator is a step forward in providing out-of-the-box security for applications that handle sensitive user information.
 
 
-## v2.0.0 - Introducing Nested & Contextual Validation - 10/3/2024
+## v2.0.0 - Introducing Nested & Contextual Validation - 3/10/2024
 ### Nested Validator and Decorator
 - **Introduction of Nested Validator**: Enhances the library's capability by allowing validation of complex, nested data structures through a combination of individual validators.
 - **```@Nested Decorator```**: Facilitates the application of nested validation rules to class properties, enabling comprehensive data integrity checks for nested objects.
