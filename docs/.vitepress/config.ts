@@ -182,6 +182,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Dependency Decorator',
               link: '/guide/dependency-validators#dependency-decorator'
+            },
+            {
+              text: 'Security Decorator',
+              link: '/guide/security-validators#security-decorator'
             }
           ]
         },
@@ -197,6 +201,10 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Dependency Validators',
               link: '/guide/dependency-validators'
+            },
+            {
+              text: 'Security Validators',
+              link: '/guide/security-validators'
             }
           ]
         },

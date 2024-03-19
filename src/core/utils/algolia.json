@@ -250,6 +250,41 @@
     "lvl1": "Validation Generation",
     "content": "The generate:validations command supports a wide range of validation types, such as Required, Custom, Array, Date, and many more. Each validation type is applied according to strategies that define how the validation is implemented.",
     "url": "#cli#validation-generation"
+  },
+  {
+    "objectID": "security-event-emitter",
+    "lvl0": "Security Utility",
+    "lvl1": "Security Event Emitter",
+    "content": "The `SecurityEvents` class is an event emitter that allows your application to handle security events dynamically.",
+    "url": "#security-validators#security-event-emitter"
+  },
+  {
+    "objectID": "security-decorator",
+    "lvl0": "Security Utility",
+    "lvl1": "Security Decorator",
+    "content": "Implement security validations seamlessly with our intuitive decorator functions.",
+    "url": "#security-validators#security-decorator"
+  },
+  {
+    "objectID": "security-function",
+    "lvl0": "Security Utility",
+    "lvl1": "Security Function",
+    "content": "The `validateSecurity` function offers a programmatic approach to validate inputs against predefined and custom security strategies.",
+    "url": "#security-validators#security-function"
+  },
+  {
+    "objectID": "comprehensive-security-strategies",
+    "lvl0": "Security Utility",
+    "lvl1": "Comprehensive Security Strategies",
+    "content": "Our library comes equipped with an extensible set of security strategies, ready to defend against attacks like XSS, SQL Injection, Command Injection, Path Traversal, and LDAP Injection.",
+    "url": "#security-validators#comprehensive-security-strategies"
+  },
+  {
+    "objectID": "extending-security-strategies",
+    "lvl0": "Security Utility",
+    "lvl1": "Extending Security Strategies",
+    "content": "Users can add or override existing security strategies by using the `addSecurityStrategy` function.",
+    "url": "#security-validators#extending-security-strategies"
   }
 ]
 

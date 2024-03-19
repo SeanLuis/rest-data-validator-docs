@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const algoliaData = require('./algolia.json');
 
-const baseUrl = "http://localhost:5173/guide";
+const baseUrl = "https://rest-data-validator.netlify.app/guide";
 
 const convertedData = algoliaData.map((item) => {
   const newItemUrl = `${baseUrl}${item.url.replace('#', '/')}`;
