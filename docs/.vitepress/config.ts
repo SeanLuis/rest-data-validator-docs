@@ -58,6 +58,25 @@ export default defineConfigWithTheme<ThemeConfig>({
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-95VHHSTEN0');`
+      ],
+      [
+        'script',
+        {
+          id: 'Cookiebot',
+          src: 'https://consent.cookiebot.com/uc.js',
+          'data-cbid': '24a35cd5-88b2-497b-bb37-81610ac07f04',
+          type: 'text/javascript',
+          async: true
+        }
+      ],
+      [
+        'script',
+        {
+          id: 'CookieDeclaration',
+          src: 'https://consent.cookiebot.com/24a35cd5-88b2-497b-bb37-81610ac07f04/cd.js',
+          type: 'text/javascript',
+          async: true
+        }
       ]
     ] as HeadConfig[],
 
