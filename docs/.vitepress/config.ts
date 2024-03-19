@@ -47,7 +47,7 @@ export default defineConfigWithTheme<ThemeConfig>({
       [
         'script',
         {
-          async: true,
+          async: '',
           src: 'https://www.googletagmanager.com/gtag/js?id=G-95VHHSTEN0'
         }
       ],
@@ -66,7 +66,7 @@ export default defineConfigWithTheme<ThemeConfig>({
           src: 'https://consent.cookiebot.com/uc.js',
           'data-cbid': '24a35cd5-88b2-497b-bb37-81610ac07f04',
           type: 'text/javascript',
-          async: true
+          async: ''
         }
       ],
       [
@@ -75,7 +75,7 @@ export default defineConfigWithTheme<ThemeConfig>({
           id: 'CookieDeclaration',
           src: 'https://consent.cookiebot.com/24a35cd5-88b2-497b-bb37-81610ac07f04/cd.js',
           type: 'text/javascript',
-          async: true
+          async: ''
         }
       ]
     ] as HeadConfig[],
