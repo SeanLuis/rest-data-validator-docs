@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.0.12 - Enhanced Interface Management - 22/3/2024
+### Introduction
+We're thrilled to unveil version 2.0.12 of REST Data Validator, marking a leap forward in our codebase organization with an emphasis on streamlined interface management. This release brings a refined approach to handling interface imports, facilitating a cleaner, more maintainable structure.
+
+### What's New
+
+#### Centralized Interface Imports
+- Simplified and centralized, our new interface import system reduces complexity and enhances code readability.
+
+#### Improved Project Structure
+- Dive into a more organized codebase that allows for quicker navigation and understanding, boosting developer efficiency.
+
+#### Optimized Development Workflow
+- Enjoy an upgraded development experience with clearer, more accessible code, easing the integration process for new team members.
+
+### Acknowledgments
+A heartfelt thank you to the REST Data Validator community for your continuous support and feedback. Your engagement is vital for our progress and innovation.
+
+Check out the [GitHub page](https://github.com/SeanLuis/rest-data-validator#readme) for detailed documentation on all the new features and improvements.
+
+
 ## v2.0.11 - Security Utility Enhancement - 19/3/2024
 ### Introduction
 We are excited to announce version 2.0.11of the REST Data Validator, introducing a significant enhancement to our security utility. This release focuses on providing robust security validation features designed to protect your applications from a variety of threats.
