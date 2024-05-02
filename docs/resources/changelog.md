@@ -1,5 +1,31 @@
 # Changelog
 
+## v2.0.13 - Dependency Updates for Enhanced Stability - 2/5/2024
+### Introduction
+Updated dependencies for enhanced stability and performance. This release ensures that our codebase remains compatible with the latest features and security updates provided by our dependencies.
+
+### Changes in Dependencies
+#### Updated Dependencies:
+- `inquirer` from `9.2.16` to `9.2.20`
+- `reflect-metadata` from `0.2.1` to `0.2.2`
+
+#### Updated Development Dependencies:
+- `@babel/cli` from `7.23.9` to `7.24.5`
+- `@babel/core` from `7.24.0` to `7.24.5`
+- `@babel/preset-env` from `7.24.0` to `7.24.5`
+- `@babel/preset-typescript` from `7.23.3` to `7.24.1`
+- `@types/node` from `20.11.28` to `20.12.8`
+- `typescript` from `5.4.2` to `5.4.5`
+
+### Implications
+This update does not introduce breaking changes but improves the overall reliability and security of the software. Users are encouraged to update their installations to take advantage of these improvements.
+
+### Acknowledgments
+A big thank you to everyone involved in the testing and implementation of these updates. Your dedication helps us maintain high standards and supports the continuous improvement of our software.
+
+Please refer to our [GitHub repository](https://github.com/SeanLuis/rest-data-validator) for more detailed information on this release.
+
+
 ## v2.0.12 - Enhanced Interface Management - 22/3/2024
 ### Introduction
 We're thrilled to unveil version 2.0.12 of REST Data Validator, marking a leap forward in our codebase organization with an emphasis on streamlined interface management. This release brings a refined approach to handling interface imports, facilitating a cleaner, more maintainable structure.
