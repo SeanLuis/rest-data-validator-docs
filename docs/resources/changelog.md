@@ -1,5 +1,23 @@
 # Changelog
 
+## v2.0.14 - Introducing Group-Based Validation for Enhanced Flexibility and Security - 13/5/2024
+### Introduction
+We are excited to announce the release of v2.0.14, which introduces a powerful group-based validation feature. This update allows for conditional validation of data based on configurable groups, improving the flexibility and security of our application.
+
+### New Features
+#### Group-Based Validation:
+- **Dynamic Validation Groups:** Administrators can now configure validation rules that apply to different user groups, enhancing control over data processing and security.
+- **Enhanced Validation Logic:** Improved the underlying validation mechanisms to support group-based conditions seamlessly.
+
+### Implications
+This feature introduces new ways to handle data validation, allowing for more precise and context-specific validation rules, which are essential for applications dealing with sensitive or diverse data sets.
+
+### Acknowledgments
+A heartfelt thank you to our development team for their hard work and dedication, and to our community for their continuous feedback which helped shape this feature.
+
+Please visit our [GitHub repository](https://github.com/YourRepoURL) for more detailed information on this release and full documentation on implementing and using the new group-based validation feature.
+
+
 ## v2.0.13 - Dependency Updates for Enhanced Stability - 2/5/2024
 ### Introduction
 Updated dependencies for enhanced stability and performance. This release ensures that our codebase remains compatible with the latest features and security updates provided by our dependencies.

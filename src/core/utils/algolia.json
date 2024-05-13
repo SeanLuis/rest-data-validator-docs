@@ -285,6 +285,13 @@
     "lvl1": "Extending Security Strategies",
     "content": "Users can add or override existing security strategies by using the `addSecurityStrategy` function.",
     "url": "#security-validators#extending-security-strategies"
+  },
+  {
+    "objectID": "group-validations",
+    "lvl0": "Group-Based Validation Feature",
+    "lvl1": "Group Valdiations",
+    "content": "The Group-Based Validation feature introduced in v2.0.14 enhances the flexibility and security of our validation mechanisms by allowing validations to be applied conditionally based on user-defined groups. This is particularly useful in applications requiring differentiated access control and data validation rules based on user roles or other contexts.",
+    "url": "#group-based-validations"
   }
 ]
 

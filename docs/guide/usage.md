@@ -92,3 +92,35 @@ function customUsernameValidator(value: string): ValidationResult {
 const result = validateCustom("user123", customUsernameValidator);
 console.log(result);
 ```
+
+## Group-Based Validation
+
+Group-based validation allows for conditional application of validation rules based on pre-defined groups. This feature is useful in scenarios where different validation logic is needed for different user types or roles.
+
+### Example of Setting Up Group-Based Validation
+
+```typescript
+import { ContextValidation } from 'path/to/context-validation';
+import { ClassValidator, String, Array } from 'path/to/validation-framework';
+
+@ClassValidator
+class Document {
+    @Array({
+        minLength: 1,
+        maxLength: 5,
+        unique: true,
+        validator: (item: string) => ({ isValid: item.length >= 2, errors: item.length < 2 ? ['Item must have at least 2 characters'] : [] })
+    }, { groups: ['ADMIN'] })
+    entries: string[];
+
+    constructor(entries: string[]) {
+        this.entries = entries;
+    }
+}
+
+// Set up groups based on user role
+ContextValidation.getInstance().setGroups(['ADMIN']);
+
+// Usage in an application
+const doc = new Document(['Hello', 'World']);
+```

@@ -190,6 +190,10 @@ export default defineConfigWithTheme<ThemeConfig>({
           ]
         },
         {
+          text: 'Group-Based Validation',
+          items: [{ text: 'Usage', link: '/guide/group-based-validations' }]
+        },
+        {
           text: 'Validation Utilities',
           items: [
             { text: 'Async Validators', link: '/guide/async-validators' },
