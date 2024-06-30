@@ -1,5 +1,28 @@
 # Changelog
 
+## v2.0.15 - Introducing String Contains and Alpha Validation for Enhanced Data Integrity - 30/6/2024
+### Introduction
+We are excited to announce the release of v2.0.15, which introduces powerful string validation features: `Contains` and `Alpha`. These updates allow for enhanced control over string data, ensuring that they meet specific criteria, thereby improving the integrity and reliability of our application.
+
+### New Features
+#### Contains Validation:
+- **Dynamic Substring Checks:** Allows validation to ensure that a string contains a specific substring a minimum number of times.
+- **Case Insensitivity Option:** Provides an option to ignore case when checking for the substring.
+- **Custom Error Messages:** Enables custom error messages to be displayed if validation fails.
+
+#### Alpha Validation:
+- **Alphabetic Character Validation:** Ensures that a string contains only alphabetic characters, supporting multiple locales.
+- **Ignore Specific Characters:** Allows certain characters (e.g., spaces, hyphens) to be ignored during validation.
+- **Custom Error Messages:** Enables custom error messages to be displayed if validation fails.
+
+### Implications
+These features introduce new ways to handle string data validation, allowing for more precise and context-specific rules, which are essential for applications dealing with text input that requires strict formatting.
+
+### Acknowledgments
+A heartfelt thank you to our development team for their hard work and dedication, and to our community for their continuous feedback which helped shape these features.
+
+Please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator) for more detailed information on this release and full documentation on implementing and using the new string validation features.
+
 ## v2.0.14 - Introducing Group-Based Validation for Enhanced Flexibility and Security - 13/5/2024
 ### Introduction
 We are excited to announce the release of v2.0.14, which introduces a powerful group-based validation feature. This update allows for conditional validation of data based on configurable groups, improving the flexibility and security of our application.

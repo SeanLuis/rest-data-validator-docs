@@ -186,6 +186,14 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Security Decorator',
               link: '/guide/security-validators#security-decorator'
+            },
+            {
+              text: 'Alpha Decorator',
+              link: '/guide/alpha-validators'
+            },
+            {
+              text: 'Contains Decorator',
+              link: '/guide/contains-validators'
             }
           ]
         },

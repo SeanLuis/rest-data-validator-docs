@@ -292,6 +292,20 @@
     "lvl1": "Group Valdiations",
     "content": "The Group-Based Validation feature introduced in v2.0.14 enhances the flexibility and security of our validation mechanisms by allowing validations to be applied conditionally based on user-defined groups. This is particularly useful in applications requiring differentiated access control and data validation rules based on user roles or other contexts.",
     "url": "#group-based-validations"
+  },
+  {
+    "objectID": "contains-validators",
+    "lvl0": "String Validation Feature",
+    "lvl1": "Contains Validators",
+    "content": "The Contains Validation feature introduced in v2.0.15 enhances the flexibility and security of our validation mechanisms by ensuring that string properties contain specific substrings a minimum number of times. This is particularly useful in applications requiring keyword presence validation in text fields.",
+    "url": "#contains-validators"
+  },
+  {
+    "objectID": "alpha-validators",
+    "lvl0": "String Validation Feature",
+    "lvl1": "Alpha Validators",
+    "content": "The IsAlpha Validation feature introduced in v2.0.15 enhances the flexibility and security of our validation mechanisms by ensuring that string properties contain only alphabetic characters. This is particularly useful in applications requiring strict formatting for text input fields.",
+    "url": "#alpha-validators"
   }
 ]
 
