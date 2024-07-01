@@ -2,13 +2,9 @@
 layout: default
 ---
 
-# Dependency Validators
-
-## Overview
+# Dependency Decorator
 
 This documentation aims to provide a clear and professional guide on using the `Dependency` decorator and the `ValidateDependency` function within the validation framework. Both tools are designed to offer powerful and flexible validation mechanisms, each serving specific roles in ensuring data integrity and business logic conformity.
-
-## Dependency Decorator
 
 ### Introduction
 
@@ -77,11 +73,23 @@ This guide focuses on organizing validation logic separately from your model def
 
 ### Table of Contents
 
-- [Folder and File Structure](#folder-and-file-structure)
-- [Setting Up the Model](#setting-up-the-model)
-- [Configuring Validations](#configuring-validations)
-- [Applying Configuration](#applying-configuration)
-- [Example Usage](#example-usage)
+- [Dependency Decorator](#dependency-decorator)
+    - [Introduction](#introduction)
+    - [Usage](#usage)
+    - [Example](#example)
+  - [Dependency Function](#dependency-function)
+    - [Introduction](#introduction-1)
+    - [Usage](#usage-1)
+    - [Example](#example-1)
+  - [Separating Validation Logic in a Clean Architecture Approach](#separating-validation-logic-in-a-clean-architecture-approach)
+    - [Overview](#overview)
+    - [Table of Contents](#table-of-contents)
+    - [Folder and File Structure](#folder-and-file-structure)
+    - [Setting Up the Model](#setting-up-the-model)
+    - [Configuring Validations](#configuring-validations)
+    - [Applying Configuration](#applying-configuration)
+    - [Example Usage](#example-usage)
+  - [Conclusion](#conclusion)
 
 ### Folder and File Structure
 

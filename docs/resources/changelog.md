@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.0.16 - Enhanced CLI Compatibility and Build Refinement - 1/7/2024
+### Introduction
+We are thrilled to announce the release of v2.0.16, which introduces crucial updates to our build processes and the handling of TypeScript interfaces to solve compatibility issues with our CLI in JavaScript environments.
+
+### Key Improvements
+#### Build Configuration:
+- Refined Babel configurations to exclude TypeScript interfaces from the JavaScript build, preventing runtime errors.
+- Enhanced TypeScript compilation process to better manage output directory structures and ensure type accuracy.
+
+#### Entrypoint Adjustments:
+- Separated interface exports into dedicated TypeScript files, clearly distinguishing them from runtime JavaScript modules.
+- Updated entry scripts to ensure that interface imports do not affect JavaScript runtime, enhancing compatibility and reliability.
+
+### Implications
+These updates ensure that our CLI and other JavaScript-based tools can operate without encountering errors related to TypeScript interfaces, making the integration process smoother and more reliable for all JavaScript developers.
+
+### Acknowledgments
+A special thanks to our development team for their dedication to resolving these issues promptly and to our community for their insightful feedback which has continuously helped improve our solutions.
+
+For detailed implementation and usage instructions, please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator).
+
 ## v2.0.15 - Introducing String Contains and Alpha Validation for Enhanced Data Integrity - 30/6/2024
 ### Introduction
 We are excited to announce the release of v2.0.15, which introduces powerful string validation features: `Contains` and `Alpha`. These updates allow for enhanced control over string data, ensuring that they meet specific criteria, thereby improving the integrity and reliability of our application.

@@ -4,8 +4,6 @@ layout: default
 
 # Contextual Decorator
 
-## Using the Contextual Decorator in Class Validation
-
 The `Contextual` decorator allows for dynamic validation of class properties based on a contextual understanding of the application state or environment. This document explains how to use the `Contextual` decorator to validate class properties effectively.
 
 ## Defining a Class with Contextual Validation

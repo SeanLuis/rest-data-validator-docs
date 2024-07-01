@@ -4,8 +4,6 @@ layout: default
 
 # Contextual Validator
 
-## Overview
-
 The Contextual Validator is a flexible and powerful tool in the TypeScript validation library that enables dynamic validation based on the context of the data. This validator is particularly useful for scenarios where the validation logic depends on certain conditions or the environment in which the data exists.
 
 ## How It Works

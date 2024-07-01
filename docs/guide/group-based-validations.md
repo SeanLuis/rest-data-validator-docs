@@ -1,7 +1,9 @@
+---
+layout: default
+---
 
 # Group-Based Validation
 
-## Overview
 The Group-Based Validation feature introduced in [v2.0.14](/resources/changelog.html#v2-0-14-introducing-group-based-validation-for-enhanced-flexibility-and-security-13-5-2024) enhances the flexibility and security of our validation mechanisms by allowing validations to be applied conditionally based on user-defined groups. This is particularly useful in applications requiring differentiated access control and data validation rules based on user roles or other contexts.
 
 ## How It Works

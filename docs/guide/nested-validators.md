@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Nested Validators
 
 The nested validator is a powerful tool for validating nested and complex data structures. It uses a combination of individual validators to validate different parts of the data structure.

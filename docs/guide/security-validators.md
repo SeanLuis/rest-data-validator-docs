@@ -1,6 +1,8 @@
-# Security Validators
+---
+layout: default
+---
 
-## Introduction
+# Security Validators
 
 This document outlines the security validation features of the `rest-data-validator` package, designed to protect your applications from a variety of security threats.
 

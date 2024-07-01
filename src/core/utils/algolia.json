@@ -168,18 +168,11 @@
     "url": "#contextual-validators"
   },
   {
-    "objectID": "dependency-validators",
-    "lvl0": "Validation Utilities",
-    "lvl1": "Dependency Validators",
-    "content": "This documentation aims to provide a clear and professional guide on using the DependencyValidator decorator and the ValidateDependency function within the validation framework. Both tools are designed to offer powerful and flexible validation mechanisms, each serving specific roles in ensuring data integrity and business logic conformity.",
-    "url": "#dependency-validators"
-  },
-  {
     "objectID": "dependency-decorator",
     "lvl0": "Validation Utilities",
     "lvl1": "Dependency Decorator",
-    "content": "DependencyValidator is a decorator used to specify validation rules for class properties based on the dependencies between them. It allows for dynamic validation where the validity of one property may depend on the value of another.",
-    "url": "#dependency-decorator"
+    "content": "The Dependency decorator is used to specify validation rules for class properties based on the dependencies between them. It allows for dynamic validation where the validity of one property may depend on the value of another.",
+    "url": "#dependency-validators"
   },
   {
     "objectID": "dependency-function",

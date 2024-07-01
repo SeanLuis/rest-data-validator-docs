@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Nested Decorator
 
 The `@Nested` decorator is used to apply nested validation rules to properties of a class. This decorator allows you to specify complex validation logic that can validate deeply nested objects or arrays of objects within your class instances.
