@@ -194,6 +194,14 @@ export default defineConfigWithTheme<ThemeConfig>({
             {
               text: 'Contains Decorator',
               link: '/guide/contains-validators'
+            },
+            {
+              text: 'BIC Decorator',
+              link: '/guide/bic-validators'
+            },
+            {
+              text: 'ISO31661Alpha2 Decorator',
+              link: '/guide/iso31661alpha2-validators'
             }
           ]
         },

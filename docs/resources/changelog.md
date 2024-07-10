@@ -1,5 +1,26 @@
 # Changelog
 
+## v2.0.17 - Introducing BIC (Bank Identification Code) and  ISO 3166-1 alpha-2 - 10/7/2024
+### Introduction
+We are excited to announce the release of v2.0.17, which brings significant improvements to our data validation library. This update introduces new validators and decorators for handling ISO 3166-1 alpha-2 country codes and BIC (Bank Identification Code) validations, along with extensive documentation to support these features.
+
+### Key Improvements
+#### New Validators and Decorators:
+- **ISO31661Alpha2 Validator and Decorator**: Validate ISO 3166-1 alpha-2 country codes efficiently, ensuring data integrity and compliance with international standards.
+- **BIC Validator and Decorator**: Accurately validate BIC codes to maintain the correctness of banking and financial data.
+
+#### Documentation:
+- Added comprehensive documentation for both `ISO31661Alpha2` and `BIC` validators and decorators.
+- Examples and usage instructions are included to guide developers on implementing these validations effectively in their applications.
+
+### Implications
+These updates provide robust tools for validating critical data types, improving the reliability and accuracy of applications that depend on country and banking data validations. The extensive documentation helps developers quickly integrate these new validators and decorators, enhancing overall development efficiency.
+
+### Acknowledgments
+A special thanks to our development team for their hard work in implementing these new features and to our community for their valuable feedback, which continues to drive our improvements.
+
+For detailed implementation and usage instructions, please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator).
+
 ## v2.0.16 - Enhanced CLI Compatibility and Build Refinement - 1/7/2024
 ### Introduction
 We are thrilled to announce the release of v2.0.16, which introduces crucial updates to our build processes and the handling of TypeScript interfaces to solve compatibility issues with our CLI in JavaScript environments.

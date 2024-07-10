@@ -299,6 +299,20 @@
     "lvl1": "Alpha Validators",
     "content": "The IsAlpha Validation feature introduced in v2.0.15 enhances the flexibility and security of our validation mechanisms by ensuring that string properties contain only alphabetic characters. This is particularly useful in applications requiring strict formatting for text input fields.",
     "url": "#alpha-validators"
+  },
+  {
+    "objectID": "bic-validators",
+    "lvl0": "String Validation Feature",
+    "lvl1": "BIC Validators",
+    "content": "The BIC Validation feature ensures that string properties follow the Bank Identification Code format, enhancing the accuracy of financial data input. This is critical for applications dealing with international banking transactions.",
+    "url": "#bic-validators"
+  },
+  {
+    "objectID": "iso31661alpha2-validators",
+    "lvl0": "String Validation Feature",
+    "lvl1": "ISO31661Alpha2 Validators",
+    "content": "The ISO 3166-1 alpha-2 Validation feature ensures that string properties follow the country code format, improving data integrity in applications handling international data.",
+    "url": "#iso31661alpha2-validators"
   }
 ]
 
