@@ -22,7 +22,6 @@ When it comes to data validation in JavaScript, two powerful libraries stand out
   - [Contextual Validation](#contextual-validation)
     - [`validator.js`](#validatorjs-2)
     - [`rest-data-validator`](#rest-data-validator-3)
-  - [Summary](#summary-1)
   - [Specific Validator Comparisons](#specific-validator-comparisons)
     - [`contains`](#contains)
       - [`validator.js`](#validatorjs-3)
@@ -212,10 +211,6 @@ setContext("documentAccess", { userRole: "admin" });
 // Usage
 const doc = new SecureDocument("Top Secret Document");
 ```
-
-## Summary
-
-Both `validator.js` and `rest-data-validator` offer robust validation solutions for JavaScript applications. However, `rest-data-validator` provides greater flexibility and power with its support for custom and contextual validations, making it a superior choice for complex validation scenarios.
 
 ## Specific Validator Comparisons
 
