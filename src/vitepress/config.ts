@@ -1,6 +1,7 @@
 import {
   LocaleLinkItem,
   MenuItemChildWithChildren,
+  MenuItemWithChildren,
   MenuItemWithLink,
   SocialLink
 } from '../core'
@@ -177,7 +178,7 @@ export interface MultiSidebarConfig {
 
 export interface SidebarGroup {
   text: string
-  items: MenuItemWithLink[]
+  items: (MenuItemWithLink | MenuItemWithChildren)[]
 }
 
 export interface i18nConfig {

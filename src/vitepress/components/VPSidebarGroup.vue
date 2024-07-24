@@ -1,18 +1,22 @@
 <script lang="ts" setup>
-import { MenuItemWithLink } from '../../core'
+import { MenuItemWithLink, MenuItem } from '../../core'
 import VPSidebarLink from './VPSidebarLink.vue'
 import { isActive } from '../support/utils'
 import { useData } from 'vitepress'
 
 const props = defineProps<{
   text: string
-  items: MenuItemWithLink[]
+  items: MenuItem[]
 }>()
 
 const { page } = useData()
 function hasActiveLink() {
   const { relativePath } = page.value
-  return props.items.some((item) => isActive(relativePath, item.link))
+  return props.items.some((item) => isLink(item) && isActive(relativePath, item.link))
+}
+
+function isLink(item: MenuItem): item is MenuItemWithLink {
+  return (item as MenuItemWithLink).link !== undefined
 }
 </script>
 
@@ -24,8 +28,30 @@ function hasActiveLink() {
       </h2>
     </div>
 
-    <template v-for="item in items" :key="item.link">
-      <VPSidebarLink :item="item" />
+    <template v-for="item in items" :key="item.text">
+      <template v-if="isLink(item)">
+        <VPSidebarLink :item="item" />
+      </template>
+      <template v-else>
+        <div class="nested-group">
+          <h3>{{ item.text }}</h3>
+          <ul>
+            <li v-for="child in item.items" :key="child.text">
+              <VPSidebarLink v-if="isLink(child)" :item="child" />
+              <template v-else>
+                <div class="nested-group">
+                  <h4>{{ child.text }}</h4>
+                  <ul>
+                    <li v-for="subchild in child.items" :key="subchild.text">
+                      <VPSidebarLink :item="subchild" />
+                    </li>
+                  </ul>
+                </div>
+              </template>
+            </li>
+          </ul>
+        </div>
+      </template>
     </template>
   </section>
 </template>
@@ -47,5 +73,23 @@ function hasActiveLink() {
   font-weight: 600;
   color: var(--vt-c-text-1);
   transition: color 0.5s;
+}
+
+.nested-group h3, .nested-group h4 {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0.5em 0;
+}
+
+.nested-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nested-group li {
+  margin: 0.5em 0;
+  padding-left: 1em;
+  border-left: 1px solid #ccc;
 }
 </style>

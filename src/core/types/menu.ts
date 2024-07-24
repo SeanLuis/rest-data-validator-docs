@@ -1,3 +1,8 @@
+export interface SidebarGroup {
+  text: string
+  items: MenuItem[]
+}
+
 export type MenuItem = MenuItemWithLink | MenuItemWithChildren
 
 export interface MenuItemWithLink {

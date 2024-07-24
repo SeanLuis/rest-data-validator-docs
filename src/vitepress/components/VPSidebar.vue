@@ -59,18 +59,12 @@ watchPostEffect(async () => {
   overflow-y: auto;
   transform: translateX(-100%);
   transition: background-color 0.5s, opacity 0.5s, transform 0.3s ease;
-  /* -ms-overflow-style: none; */
-  /* scrollbar-width: none; */
 }
 
 #VPSidebarNav {
   padding-top: 24px;
   outline: 0;
 }
-
-/* .VPSidebar::-webkit-scrollbar {
-  display: none;
-} */
 
 @media (min-width: 960px) {
   .VPSidebar {

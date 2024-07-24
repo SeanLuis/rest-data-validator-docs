@@ -101,7 +101,8 @@ export default defineConfigWithTheme<ThemeConfig>({
             items: [
               { text: 'Features', link: '/guide/features' },
               { text: 'Installation', link: '/guide/installation' },
-              { text: 'Usage', link: '/guide/usage' }
+              { text: 'Usage', link: '/guide/usage' },
+              { text: 'Comparison', link: '/guide/comparison' }
             ]
           }
         ]
@@ -155,7 +156,13 @@ export default defineConfigWithTheme<ThemeConfig>({
           items: [
             { text: 'Features', link: '/guide/features' },
             { text: 'Installation', link: '/guide/installation' },
-            { text: 'Usage', link: '/guide/usage' }
+            { text: 'Usage', link: '/guide/usage' },
+            {
+              text: 'Comparison',
+              items: [
+                { text: 'Validator.js', link: '/guide/comparison-validatorjs' }
+              ]
+            }
           ]
         },
         {
