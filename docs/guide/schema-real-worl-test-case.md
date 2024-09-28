@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 # Real World Test Case: Validation with Schema File Provider and Schema Library
 
