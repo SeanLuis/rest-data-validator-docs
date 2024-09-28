@@ -1,6 +1,31 @@
 # Changelog
 
-## v2.0.17 - Introducing BIC (Bank Identification Code) and  ISO 3166-1 alpha-2 - 10/7/2024
+## v2.0.18 - Introducing Schema File Provider and Expanded Validation Schemas - 9/28/2024
+### Introduction
+We are pleased to announce the release of v2.0.18, which introduces two powerful features: the `SchemaFileProvider` utility for loading external schema files and an expansion of our validation schema library. These improvements significantly enhance the flexibility and scalability of the validation system, providing developers with more granular control over their validation logic.
+
+### Key Improvements
+
+#### SchemaFileProvider:
+- **External Schema Loading**: Load schema definitions from JSON or YAML files, externalizing schema management for large-scale applications.
+- **Schema Conversion and Retrieval**: Convert schema definitions into `ValidationSchemaBase` instances and dynamically retrieve entity schemas using `getSchema`.
+- **Environment Configuration**: Schema file paths can now be configured via the `SCHEMA_FILE_PATH` environment variable for seamless integration.
+
+#### Expanded Validation Schemas:
+- **New Schema Types**: Added support for various schema types including `StringSchema`, `NumberSchema`, `ArraySchema`, `EnumSchema`, `DateSchema`, `TupleSchema`, and more.
+- **Advanced Validation Control**: With these new schema types, developers can validate complex data structures with greater precision and flexibility.
+- **Lazy and Transform Schemas**: Support for lazy evaluations and transformations during validation.
+
+### Implications
+These updates provide essential tools for externalizing schema management and enhancing the robustness of validation processes. Developers can now manage and update schema definitions without modifying core application logic, making the system more maintainable and scalable. Additionally, the expanded schema support allows for more comprehensive data validation, ensuring data integrity across a wider range of use cases.
+
+### Acknowledgments
+We extend our gratitude to the development team for their dedication to enhancing the library, and to the community for their continuous feedback and support. These contributions help us refine and improve the system with every release.
+
+For more details and implementation guidance, visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator).
+
+
+## v2.0.17 - Introducing BIC (Bank Identification Code) and  ISO 3166-1 alpha-2 - 7/10/2024
 ### Introduction
 We are excited to announce the release of v2.0.17, which brings significant improvements to our data validation library. This update introduces new validators and decorators for handling ISO 3166-1 alpha-2 country codes and BIC (Bank Identification Code) validations, along with extensive documentation to support these features.
 
@@ -21,7 +46,7 @@ A special thanks to our development team for their hard work in implementing the
 
 For detailed implementation and usage instructions, please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator).
 
-## v2.0.16 - Enhanced CLI Compatibility and Build Refinement - 1/7/2024
+## v2.0.16 - Enhanced CLI Compatibility and Build Refinement - 7/1/2024
 ### Introduction
 We are thrilled to announce the release of v2.0.16, which introduces crucial updates to our build processes and the handling of TypeScript interfaces to solve compatibility issues with our CLI in JavaScript environments.
 
@@ -42,7 +67,7 @@ A special thanks to our development team for their dedication to resolving these
 
 For detailed implementation and usage instructions, please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator).
 
-## v2.0.15 - Introducing String Contains and Alpha Validation for Enhanced Data Integrity - 30/6/2024
+## v2.0.15 - Introducing String Contains and Alpha Validation for Enhanced Data Integrity - 6/30/2024
 ### Introduction
 We are excited to announce the release of v2.0.15, which introduces powerful string validation features: `Contains` and `Alpha`. These updates allow for enhanced control over string data, ensuring that they meet specific criteria, thereby improving the integrity and reliability of our application.
 
@@ -65,7 +90,7 @@ A heartfelt thank you to our development team for their hard work and dedication
 
 Please visit our [GitHub repository](https://github.com/SeanLuis/rest-data-validator) for more detailed information on this release and full documentation on implementing and using the new string validation features.
 
-## v2.0.14 - Introducing Group-Based Validation for Enhanced Flexibility and Security - 13/5/2024
+## v2.0.14 - Introducing Group-Based Validation for Enhanced Flexibility and Security - 5/13/2024
 ### Introduction
 We are excited to announce the release of v2.0.14, which introduces a powerful group-based validation feature. This update allows for conditional validation of data based on configurable groups, improving the flexibility and security of our application.
 
@@ -83,7 +108,7 @@ A heartfelt thank you to our development team for their hard work and dedication
 Please visit our [GitHub repository](https://github.com/YourRepoURL) for more detailed information on this release and full documentation on implementing and using the new group-based validation feature.
 
 
-## v2.0.13 - Dependency Updates for Enhanced Stability - 2/5/2024
+## v2.0.13 - Dependency Updates for Enhanced Stability - 5/2/2024
 ### Introduction
 Updated dependencies for enhanced stability and performance. This release ensures that our codebase remains compatible with the latest features and security updates provided by our dependencies.
 
@@ -109,7 +134,7 @@ A big thank you to everyone involved in the testing and implementation of these 
 Please refer to our [GitHub repository](https://github.com/SeanLuis/rest-data-validator) for more detailed information on this release.
 
 
-## v2.0.12 - Enhanced Interface Management - 22/3/2024
+## v2.0.12 - Enhanced Interface Management - 3/22/2024
 ### Introduction
 We're thrilled to unveil version 2.0.12 of REST Data Validator, marking a leap forward in our codebase organization with an emphasis on streamlined interface management. This release brings a refined approach to handling interface imports, facilitating a cleaner, more maintainable structure.
 
@@ -130,7 +155,7 @@ A heartfelt thank you to the REST Data Validator community for your continuous s
 Check out the [GitHub page](https://github.com/SeanLuis/rest-data-validator#readme) for detailed documentation on all the new features and improvements.
 
 
-## v2.0.11 - Security Utility Enhancement - 19/3/2024
+## v2.0.11 - Security Utility Enhancement - 3/19/2024
 ### Introduction
 We are excited to announce version 2.0.11of the REST Data Validator, introducing a significant enhancement to our security utility. This release focuses on providing robust security validation features designed to protect your applications from a variety of threats.
 
@@ -156,7 +181,7 @@ We extend our heartfelt gratitude to the REST Data Validator community for your 
 
 For detailed information on all features and updates, please refer to the documentation on our [GitHub page](https://github.com/SeanLuis/rest-data-validator#readme).
 
-## v2.0.10 - CLI Generators and Strategies Enhancement - 16/3/2024
+## v2.0.10 - CLI Generators and Strategies Enhancement - 3/16/2024
 ### Introduction
 We are pleased to announce version 2.0.10 of the REST Data Validator, focusing on significant updates to the model and validation generators, along with crucial fixes to various validation strategies. This release aims to streamline the development process further and enhance the reliability of our CLI tool.
 
@@ -182,7 +207,7 @@ We extend our heartfelt gratitude to the REST Data Validator community for your 
 
 For detailed information on all features and updates, please refer to the documentation on our [GitHub page](https://github.com/SeanLuis/rest-data-validator#readme).
 
-## v2.0.9 - Dependency Adjustment and CLI Enhancement - 16/3/2024
+## v2.0.9 - Dependency Adjustment and CLI Enhancement - 3/16/2024
 ### Introduction
 We're excited to announce the release of REST Data Validator version 2.0.9. This update focuses on addressing dependency management for improved usability and stability, particularly regarding the CLI tool functionality.
 
@@ -210,7 +235,7 @@ yarn upgrade rest-data-validator
 
 
 
-## v2.0.8 - Introducing CLI Tool Integration - 16/3/2024
+## v2.0.8 - Introducing CLI Tool Integration - 3/16/2024
 ### Introduction
 We are thrilled to announce the release of REST Data Validator version 2.0.8. This update introduces an exciting new feature: the integration of a CLI tool for generating models and applying validations. Additionally, we've enhanced model validation capabilities to further support your development workflows.
 
@@ -245,7 +270,7 @@ We extend our deepest gratitude to the REST Data Validator community for your va
 For a comprehensive guide on all features and updates introduced in version 2.0.8, visit our [documentation site](https://rest-data-validator.netlify.app).
 
 
-## v2.0.7 - Documentation Migration to New Site - 15/3/2024
+## v2.0.7 - Documentation Migration to New Site - 3/15/2024
 ### Introduction
 In our continuous effort to improve REST Data Validator and the user experience, we are excited to announce version 2.0.7. The highlight of this release is the migration of our documentation to a new, more user-friendly site.
 
@@ -274,7 +299,7 @@ We want to thank our community for your ongoing support and feedback. This migra
 For detailed information on all features and updates, please visit our new [documentation site](https://rest-data-validator.netlify.app).
 
 
-## v2.0.6 - Introducing Dependency Validation - 12/3/2024
+## v2.0.6 - Introducing Dependency Validation - 3/12/2024
 ### Introduction
 We are thrilled to announce the initial release of REST Data Validator, a library designed to simplify and enhance the validation process for data integrity in RESTful applications. This release introduces a powerful set of features to support complex validation scenarios.
 
@@ -300,7 +325,7 @@ A special thanks to all contributors and the community for your support and feed
 
 For more details and usage examples, please visit our [documentation](https://github.com/SeanLuis/rest-data-validator?tab=readme-ov-file#dependency-validators).
 
-## v2.0.5 - Utility Decorators Added for Enhanced Property Management - 12/3/2024
+## v2.0.5 - Utility Decorators Added for Enhanced Property Management - 3/12/2024
 We are excited to announce the release of `rest-data-validator` v2.0.5, which introduces a set of new utility decorators to improve property management within your classes.
 
 ### What's New in 2.0.5?
@@ -331,7 +356,7 @@ Stay tuned for further updates as we continue to improve and expand `rest-data-v
 
 Remember to check the updated [documentation](https://github.com/SeanLuis/rest-data-validator/blob/master/README.md) for detailed information on the new release.
 
-## v2.0.4 - Documentation Clarity Enhancements - 12/3/2024
+## v2.0.4 - Documentation Clarity Enhancements - 3/12/2024
 ### Improved Readability and Navigation in Documentation
 
 We are delighted to roll out the 2.0.4 update for `rest-data-validator`, which significantly improves the documentation to enhance user experience.
@@ -347,7 +372,7 @@ These updates are part of our ongoing efforts to ensure that `rest-data-validato
 We appreciate your feedback and contributions which help us improve further. Stay tuned for more updates!
 
 
-## v2.0.3 - Introducing Password Validation Enhancements - 12/3/2024
+## v2.0.3 - Introducing Password Validation Enhancements - 3/12/2024
 We are thrilled to introduce the `Password` decorator in this version. It provides a way to enforce password validations within TypeScript classes, ensuring that passwords meet established security standards.
 
 ### Additions
@@ -368,7 +393,7 @@ We are thrilled to introduce the `Password` decorator in this version. It provid
 The `Password` decorator is a step forward in providing out-of-the-box security for applications that handle sensitive user information.
 
 
-## v2.0.0 - Introducing Nested & Contextual Validation - 10/3/2024
+## v2.0.0 - Introducing Nested & Contextual Validation - 3/10/2024
 ### Nested Validator and Decorator
 - **Introduction of Nested Validator**: Enhances the library's capability by allowing validation of complex, nested data structures through a combination of individual validators.
 - **```@Nested Decorator```**: Facilitates the application of nested validation rules to class properties, enabling comprehensive data integrity checks for nested objects.

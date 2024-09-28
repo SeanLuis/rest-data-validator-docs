@@ -232,16 +232,24 @@ export default defineConfigWithTheme<ThemeConfig>({
           ]
         },
         {
-          text: 'Sanitizer Utilities',
-          items: [{ text: 'Functions', link: '/guide/sanitizer-functions' }]
-        },
-        {
           text: 'Decorators Utilities',
           items: [
             { text: 'Accessors Decorator', link: '/guide/accessors-decorator' },
             { text: 'Getter Decorator', link: '/guide/getter-decorator' },
             { text: 'Setter Decorator', link: '/guide/setter-decorator' }
           ]
+        },
+        {
+          text: 'Schema Validations',
+          items: [
+            { text: 'Library', link: '/guide/schema-library' },
+            { text: 'File Provider', link: '/guide/schema-file-provider' },
+            { text: 'Real Worl Example', link: '/guide/schema-real-worl-test-case' }
+          ]
+        },
+        {
+          text: 'Sanitizer Utilities',
+          items: [{ text: 'Functions', link: '/guide/sanitizer-functions' }]
         },
         {
           text: 'Rest CLI',

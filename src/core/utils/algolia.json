@@ -313,6 +313,201 @@
     "lvl1": "ISO31661Alpha2 Validators",
     "content": "The ISO 3166-1 alpha-2 Validation feature ensures that string properties follow the country code format, improving data integrity in applications handling international data.",
     "url": "#iso31661alpha2-validators"
+  },
+  {
+    "objectID": "schemafileprovider-overview",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Overview",
+    "content": "The SchemaFileProvider class provides utilities for loading and converting schema definitions from JSON or YAML files into instances of validation schemas.",
+    "url": "#overview"
+  },
+  {
+    "objectID": "schemafileprovider-class",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "SchemaFileProvider Class",
+    "content": "The SchemaFileProvider class is composed of three main static methods that facilitate the process of loading and converting schema definitions from files, as well as obtaining specific entity schemas.",
+    "url": "#schemafileprovider-class"
+  },
+  {
+    "objectID": "loadschemafromfile",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "SchemaFileProvider Class",
+    "lvl2": "loadSchemaFromFile",
+    "content": "The loadSchemaFromFile method loads and parses a schema definition from a JSON or YAML file.",
+    "url": "#loadschemafromfile"
+  },
+  {
+    "objectID": "converttoschema",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "SchemaFileProvider Class",
+    "lvl2": "convertToSchema",
+    "content": "The convertToSchema method converts a schema definition object into an instance of ValidationSchemaBase.",
+    "url": "#converttoschema"
+  },
+  {
+    "objectID": "getschema",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "SchemaFileProvider Class",
+    "lvl2": "getSchema",
+    "content": "The getSchema method retrieves a specific schema for a given entity from the loaded schemas.",
+    "url": "#getschema"
+  },
+  {
+    "objectID": "default-path-environment-variable",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Default Path and Environment Variables",
+    "content": "When using SchemaFileProvider, you can set the schema file path via the SCHEMA_FILE_PATH environment variable. If not set, the default path ../config/schemas is used.",
+    "url": "#default-path-and-environment-variables"
+  },
+  {
+    "objectID": "usage-examples-loading-converting-yaml",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Usage Examples",
+    "lvl2": "Loading and Converting a YAML Schema",
+    "content": "Example code for loading and converting a YAML schema using SchemaFileProvider.",
+    "url": "#loading-and-converting-a-yaml-schema"
+  },
+  {
+    "objectID": "usage-examples-loading-converting-json",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Usage Examples",
+    "lvl2": "Loading and Converting a JSON Schema",
+    "content": "Example code for loading and converting a JSON schema using SchemaFileProvider.",
+    "url": "#loading-and-converting-a-json-schema"
+  },
+  {
+    "objectID": "usage-examples-getting-entity-schemas",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Usage Examples",
+    "lvl2": "Getting and Using Specific Entity Schemas",
+    "content": "You can retrieve specific schemas such as user, employee using the getSchema method. The SchemaFileProvider automatically loads the schemas based on the environment variable SCHEMA_FILE_PATH or from a default path, so you don't need to manually load the schema files.",
+    "url": "#getting-and-using-specific-entity-schemas"
+  },
+  {
+    "objectID": "error-handling",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Error Handling",
+    "content": "The SchemaFileProvider may throw errors in scenarios such as unsupported file type, file not found, or entity schema not found.",
+    "url": "#error-handling"
+  },
+  {
+    "objectID": "summary",
+    "lvl0": "Schema File Provider Guide",
+    "lvl1": "Summary",
+    "content": "The SchemaFileProvider class is a powerful tool that allows you to externalize your schema definitions into JSON or YAML files, making your validation logic more flexible and easier to manage.",
+    "url": "#summary"
+  },
+  {
+    "objectID": "overview-validation-library",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "Overview",
+    "content": "This library provides a comprehensive set of validation schemas to validate various data types and structures in a scalable and flexible manner.",
+    "url": "#overview"
+  },
+  {
+    "objectID": "stringschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "StringSchema",
+    "content": "The StringSchema validates string values and allows setting constraints like minimum and maximum length.",
+    "url": "#stringschema"
+  },
+  {
+    "objectID": "numberschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "NumberSchema",
+    "content": "The NumberSchema validates number values and allows setting constraints like minimum and maximum value.",
+    "url": "#numberschema"
+  },
+  {
+    "objectID": "booleanschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "BooleanSchema",
+    "content": "The BooleanSchema validates boolean values.",
+    "url": "#booleanschema"
+  },
+  {
+    "objectID": "objectschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "ObjectSchema",
+    "content": "The ObjectSchema validates objects based on a schema definition for each property.",
+    "url": "#objectschema"
+  },
+  {
+    "objectID": "arrayschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "ArraySchema",
+    "content": "The ArraySchema validates arrays and allows setting constraints on the array's length and its elements' schema.",
+    "url": "#arrayschema"
+  },
+  {
+    "objectID": "unionschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "UnionSchema",
+    "content": "The UnionSchema validates a value that can match any one of the provided schemas.",
+    "url": "#unionschema"
+  },
+  {
+    "objectID": "enumschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "EnumSchema",
+    "content": "The EnumSchema validates a value that is one of a predefined set of allowed values.",
+    "url": "#enumschema"
+  },
+  {
+    "objectID": "dateschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "DateSchema",
+    "content": "The DateSchema validates date values and allows setting constraints on the date range.",
+    "url": "#dateschema"
+  },
+  {
+    "objectID": "tupleschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "TupleSchema",
+    "content": "The TupleSchema validates an array with a fixed length and specific types at each index.",
+    "url": "#tupleschema"
+  },
+  {
+    "objectID": "recordschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "RecordSchema",
+    "content": "The RecordSchema validates an object where all keys must match a schema and all values must match another schema.",
+    "url": "#recordschema"
+  },
+  {
+    "objectID": "nullableschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "NullableSchema",
+    "content": "The NullableSchema allows a value to be null or to satisfy another schema.",
+    "url": "#nullableschema"
+  },
+  {
+    "objectID": "anyschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "AnySchema",
+    "content": "The AnySchema accepts any value without restrictions.",
+    "url": "#anyschema"
+  },
+  {
+    "objectID": "lazyschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "LazySchema",
+    "content": "The LazySchema allows defining a schema that is evaluated lazily, useful for recursive or conditional schemas.",
+    "url": "#lazyschema"
+  },
+  {
+    "objectID": "literalschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "LiteralSchema",
+    "content": "The LiteralSchema validates that a value matches a specific literal value.",
+    "url": "#literalschema"
+  },
+  {
+    "objectID": "transformschema",
+    "lvl0": "Validation Library Guide",
+    "lvl1": "TransformSchema",
+    "content": "The TransformSchema allows transforming the value during validation, applying a transformation function before validating.",
+    "url": "#transformschema"
   }
 ]
 

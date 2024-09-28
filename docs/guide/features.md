@@ -4,9 +4,23 @@ layout: default
 
 # Features
 
-- **Comprehensive Validation**: Supports validation of strings, numbers, emails, dates, enums, files, and custom formats.
-- **Decorator-based Validation**: Utilizes TypeScript decorators for easy and declarative validation directly in your class models.
-- **Flexible and Extensible**: Easily extendable to include custom validation rules and logic.
-- **Framework Agnostic**: Can be used with any server-side framework or library, such as Express, Koa, or Fastify.
-- **Full TypeScript Support**: Leverages TypeScript for type safety and enhanced developer experience.
-- **Custom Error Messages**: Allows defining custom error messages for each validation rule to provide clear and specific feedback.
+## 🚀 Performance Optimization
+- **Highly Optimized Package**: Size reduced from 700KB to 300KB, significantly boosting performance and efficiency.
+
+## ✨ Core Features
+- **Comprehensive Validation**: Full support for strings, numbers, emails, dates, enums, files, and custom formats.
+- **Decorator-based Validation**: Leverage TypeScript decorators for seamless, declarative integration directly in class models.
+
+## 🌐 Framework Compatibility
+- **Framework Agnostic**: Compatible with any server-side framework including Express, Koa, and Fastify.
+
+## 🧩 Extensibility
+- **Flexible and Customizable**: Extend with custom validation rules and logic to fit any use case.
+- **Schema Creation**: Design and implement validation schemas similar to leading schema libraries, streamlining data validation processes.
+- **Configuration from Files**: Easily configure schemas through external JSON or YAML files for dynamic and manageable setups.
+
+## 🔒 TypeScript Integration
+- **Full TypeScript Support**: Utilize the full power of TypeScript for type safety and an enhanced development experience.
+
+## 📝 Customizability
+- **Custom Error Messages**: Define specific error messages for each validation rule to enhance clarity and user guidance.
